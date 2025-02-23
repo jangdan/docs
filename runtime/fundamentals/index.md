@@ -6,7 +6,7 @@ Deno is designed with the developer in mind, aiming to provide a smooth and
 enjoyable development process. Its simplicity and efficiency make it quick and
 easy to pick up, even for those new to the backend development.
 
-## Built in tooling
+## Built-In Tooling
 
 Deno’s inbuilt tooling significantly eases the onboarding process. With a single
 executable, you can get started without worrying about complex setups or
