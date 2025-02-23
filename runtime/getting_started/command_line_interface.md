@@ -142,7 +142,7 @@ deno run --watch-hmr main.ts
 When a hot module replacement is triggered, the runtime will dispatch a
 `CustomEvent` of type `hmr` that will include `path` property in its `detail`
 object. You can listen for this event and perform any additional logic that you
-need to do when a module is updated (eg. notify a browser over a WebSocket
+need to do when a module is updated (e.g. notify a browser over a WebSocket
 connection).
 
 ```ts
@@ -168,7 +168,7 @@ Find out more about these
 
 Affect commands which can populate the cache: `deno install`, `deno run`,
 `deno test`, `deno doc`, and `deno compile`. As well as the flags above, this
-includes those which affect module resolution, compilation configuration etc.
+includes those which affect module resolution, compilation configuration, etc.
 
 ```sh
 --config <FILE>               Load configuration file
@@ -198,10 +198,10 @@ argument to deno run:
 > deno run --check main.ts
 ```
 
-This flag affects `deno run`, `deno eval`, `deno repl`. The following table
+This flag affects `deno run`, `deno eval`, and `deno repl`. The following table
 describes the type-checking behavior of various subcommands. Here "Local" means
-that only errors from local code will induce type-errors, modules imported from
-https URLs (remote) may have type errors that are not reported. (To turn on
+that only errors from local code will induce type-errors; modules imported from
+HTTPS URLs (remote) may have type errors that are not reported. (To turn on
 type-checking for all modules, use `--check=all`.)
 
 | Subcommand     | Type checking mode |
