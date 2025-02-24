@@ -42,7 +42,7 @@ the key principles of Deno's security model:
   same thread.
 - **Code can not escalate its privileges without user consent**: Code executing
   in a Deno runtime can not escalate its privileges without the user agreeing
-  explicitly to an escalation via interactive prompt or a invocation time flag.
+  explicitly to an escalation via interactive prompt or an invocation-time flag.
 - **The initial static module graph can import local files without
   restrictions**: All files that are imported in the initial static module graph
   can be imported without restrictions, so even if an explicit read permission
@@ -81,7 +81,7 @@ take precedence.
 Deno also provides a `--allow-all` flag that grants all permissions to the
 script. This **disables** the security sandbox entirely, and should be used with
 caution. The `--allow-all` has the same security properties as running a script
-in Node.js (ie none).
+in Node.js (i.e. none).
 
 Definition: `-A, --allow-all`
 
